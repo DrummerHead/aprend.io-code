@@ -1,0 +1,263 @@
+html {
+  font-family: sans-serif;
+  overflow-y: scroll;
+}
+body {
+  margin: 0;
+}
+#viewport-emulation {
+  width: 800px;
+  height: 600px;
+  padding: 1px;
+  margin: 70px auto 0;
+  font-size: .8em;
+}
+#body-emulation {
+  margin: 0 0 70px;
+  position: relative;
+}
+.main-emulation {
+  display: none;
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 2em;
+}
+.current {
+  display: block;
+}
+
+.wire {
+  border: 1px solid #111;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.h1 { height: 1em }
+.h2 { height: 2em }
+.h3 { height: 3em }
+.h4 { height: 4em }
+.h5 { height: 5em }
+.h6 { height: 6em }
+.h7 { height: 7em }
+.h8 { height: 8em }
+.h9 { height: 9em }
+.h10 { height: 10em }
+.h11 { height: 11em }
+.h12 { height: 12em }
+.h13 { height: 13em }
+.h14 { height: 14em }
+.h15 { height: 15em }
+.h16 { height: 16em }
+.h17 { height: 17em }
+.h18 { height: 18em }
+.h19 { height: 19em }
+.h20 { height: 20em }
+.h21 { height: 21em }
+.h22 { height: 22em }
+.h23 { height: 23em }
+.h24 { height: 24em }
+.h25 { height: 25em }
+.h26 { height: 26em }
+.h27 { height: 27em }
+.h28 { height: 28em }
+.h29 { height: 29em }
+.h30 { height: 30em }
+.h31 { height: 31em }
+.h32 { height: 32em }
+.h33 { height: 33em }
+.h34 { height: 34em }
+.h35 { height: 35em }
+.h36 { height: 36em }
+.h37 { height: 37em }
+.h38 { height: 38em }
+.h39 { height: 39em }
+.h40 { height: 40em }
+.h41 { height: 41em }
+.h42 { height: 42em }
+.h43 { height: 43em }
+.h44 { height: 44em }
+.h45 { height: 45em }
+.h46 { height: 46em }
+.h47 { height: 47em }
+.h48 { height: 48em }
+.h49 { height: 49em }
+.h50 { height: 50em }
+
+
+/*
+#!/usr/bin/env ruby
+
+margin = 2             # in percentage
+columns_length = 12    # amount of columns
+column_width = (100 - (margin * (columns_length - 1))).to_f / columns_length
+
+(1..columns_length).each do |col|
+  puts ".w#{col} { width: #{col * column_width + (margin * (col - 1))}% }"
+end
+*/
+
+
+
+.w1 { width: 6.5%}
+.w2 { width: 15.0%}
+.w3 { width: 23.5%}
+.w4 { width: 32.0%}
+.w5 { width: 40.5%}
+.w6 { width: 49.0%}
+.w7 { width: 57.5%}
+.w8 { width: 66.0%}
+.w9 { width: 74.5%}
+.w10 { width: 83.0%}
+.w11 { width: 91.5%}
+.w12 { width: 100.0%}
+
+
+
+.wire > p {
+  margin: 0;
+  font-size: 2em;
+  color: #888;
+}
+.row:before,
+.row:after {
+  content: '';
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.float-left {
+  float: left;
+  margin-right: 2%;
+}
+.float-left:last-of-type {
+  margin-right: 0;
+}
+
+
+
+
+
+#mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../img/mask.png');
+  background-attachment: fixed;
+  background-position: 50% 0;
+}
+#controls {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 7em;
+  color: #555;
+}
+#controls li {
+  position: fixed;
+  top: 40%;
+  cursor: pointer;
+}
+#controls li:hover {
+  color: #111;
+}
+#previous {
+  left: 0;
+}
+#next {
+  right: 0;
+}
+
+
+
+#absolute-example {
+  margin-top: 1em;
+  position: relative;
+}
+#ae1,
+#ae2,
+#ae3 {
+  position: absolute;
+}
+#ae1 {
+  top: 5em;
+  left: 7em;
+}
+#ae2 {
+  top: 11em;
+  left: 34em;
+}
+#ae3 {
+  top: 25em;
+  left: 11em;
+}
+
+
+#fixed-example {
+  position: relative;
+}
+#fixed-panel {
+  position: fixed;
+  top: 6.6em;
+  width: 18.2em;
+}
+#complex-example-twitter {
+}
+#fixed-header {
+  position: fixed;
+  top: 70px;
+}
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  float: left;
+  border-right: 1px solid #444;
+  padding: 1em;
+  text-align: center;
+}
+.tight {
+  padding: 0 !important;
+}
+.cuddly {
+  margin: 0;
+}
+.tw-content {
+  margin-top: 60px;
+}
+.content-flow {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.content-flow li {
+}
+.avatar {
+  height: 2.8em;
+  padding: 0;
+  background-color: #808080;
+}
+.comment {
+}
+.comment p {
+  font-size: 1.05em;
+}
+.comment p {
+}
+input {
+  margin: 0;
+}
+.menu.row.wire li {
+  padding: 1em 0;
+}
+.menu.row.wire li:last-of-type {
+  border-right-style: none;
+}

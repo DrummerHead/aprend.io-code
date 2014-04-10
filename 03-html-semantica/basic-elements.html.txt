@@ -1,0 +1,11 @@
+<h1>Titulo del documento</h1>
+<h2>Subtitulo nivel dos</h2>
+<h3>Subtitulo nivel tres</h3>
+<h4>Subtitulo nivel cuatro</h4>
+<h5>Subtitulo nivel cinco</h5>
+<h6>Subtitulo nivel seis</h6>
+
+<p>Párrafo de texto</p>
+
+<strong>Importante</strong>
+<em>Énfasis</em>

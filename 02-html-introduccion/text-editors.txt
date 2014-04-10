@@ -1,0 +1,29 @@
+Bluefish
+Linux, OS X, Windows
+http://bluefish.openoffice.nl/download.html
+
+gedit
+Linux, OS X, Windows
+https://projects.gnome.org/gedit/
+
+Notepad++
+Windows
+http://notepad-plus-plus.org/download/
+
+Brackets
+OS X, Windows
+http://download.brackets.io/
+
+Pro:
+
+Vim
+Linux, OS X, Windows
+http://www.vim.org/
+
+Emacs
+Linux, OS X, Windows
+http://www.gnu.org/software/emacs/
+
+
+http://en.wikipedia.org/wiki/Comparison_of_text_editors
+

@@ -1,0 +1,29 @@
+html {
+}
+body {
+  max-width: 77em;
+  padding: 0 1.5em;
+  margin: 2em auto;
+  font-family: sans-serif;
+}
+#calculate {
+  margin: 0 0 1em 0;
+}
+#css-output {
+  width: 100%;
+  min-height: 42em;
+  resize: vertical;
+  font-family: monospace;
+}
+#use-case {
+  margin: 1em 0;
+}
+#use-case .row {
+  margin-bottom: 1em;
+}
+#use-case [class ^= 'col-'] {
+  background-color: #ccc;
+  border: .1em solid #888;
+  padding-top: .75em;
+  padding-bottom: .75em;
+}

@@ -1,0 +1,25 @@
+html {
+  background-color: #add8e6;
+}
+body {
+  width: 52em;
+  margin: 1em auto;
+  padding: .7em 2em;
+  line-height: 1.4;
+  background-color: #fff;
+  font-family: sans-serif;
+  box-shadow: 0 0 1em rgba(0, 0, 0, .4);
+}
+
+selector {
+  propiedad: valor;
+  propiedad: valor;
+  propiedad: valor;
+  propiedad: valor;
+  propiedad: valor;
+}
+
+img {
+  display: block;
+  margin: 1em;
+}

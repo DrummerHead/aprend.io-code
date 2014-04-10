@@ -1,0 +1,243 @@
+<!-- Sections & structuring -->
+<!-- ###################### -->
+
+<div>
+</div>
+
+<span></span>
+
+<header>
+</header>
+
+<nav>
+</nav>
+
+<main>
+</main>
+
+<section>
+</section>
+
+<article>
+</article>
+
+<aside>
+</aside>
+
+<footer>
+</footer>
+
+
+
+
+<!-- Grouping content, collections -->
+<!-- ############################# -->
+
+<ul>
+  <li>Alpha</li>
+  <li>Bravo</li>
+  <li>Charlie</li>
+</ul>
+
+<ol>
+  <li>Alpha</li>
+  <li>Bravo</li>
+  <li>Charlie</li>
+</ol>
+
+<dl>
+  <dt>Thing</dt>
+  <dd>Definition</dd>
+  <dt>Stuff</dt>
+  <dd>Description</dd>
+</dl>
+
+
+
+
+<!-- Text-level semantics -->
+<!-- #################### -->
+
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+
+<p></p>
+
+<strong></strong>
+
+<em></em>
+
+<abbr title='HyperText Markup Language'>HTML</abbr>
+
+
+
+
+<!-- Embedded content -->
+<!-- ################ -->
+
+<img src='' alt=''>
+
+<iframe src='https://duckduckgo.com/'></iframe>
+
+<video controls>
+  <source src='' type='video/mp4'>
+  <source src='' type='video/webm'>
+  <source src='' type='video/ogg'>
+</video>
+
+<audio src=''></audio>
+
+<canvas></canvas>
+
+
+
+
+<!-- Tabular data -->
+<!-- ############ -->
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<!-- Forms & Interactive-->
+<!-- ################### -->
+
+<a href=''></a>
+
+<form></form>
+
+<label for=''></label>
+
+<input type='text'>
+
+<input type='email'>
+
+<input type='password'>
+
+<input type='checkbox' value='agua'>
+<input type='checkbox' value='pan'>
+<input type='checkbox' value='ph'>
+<input type='checkbox' value='jabon'>
+
+<input type='radio' value='banana' name='fruta'>
+<input type='radio' value='manzana' name='fruta'>
+<input type='radio' value='pera' name='fruta'>
+<input type='radio' value='durazno' name='fruta'>
+
+<input type='button' value='buscar'>
+
+<input type='submit' value='enviar'>
+
+<button><img src='sicodelia.jpg'> Mandar la sicodelia</button>
+
+<select>
+  <option value='ar'>Argentina</option>
+  <option value='bo'>Bolivia</option>
+  <option value='br'>Brazil</option>
+  <option value='cl'>Chile</option>
+  <option value='co'>Colombia</option>
+  <option value='ec'>Ecuador</option>
+  <option value='py'>Paraguay</option>
+  <option value='pe'>Peru</option>
+  <option value='uy'>Uruguay</option>
+  <option value='ve'>Venezuela</option>
+</select>
+
+<textarea></textarea>
+
+
+
+
+<!-- (Not a category in itself) -->
+<!-- Void Elements -->
+<!-- ############# -->
+
+
+<!-- most common and actually used -->
+
+<img src='' alt=''>
+
+<input type='text'>
+
+<link rel='' href=''>
+
+<meta name='' content=''>
+
+<table>
+  <col class='alpha'>
+  <col class='bravo'>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<video controls>
+  <source src='foo.ogg' type='video/ogg'>
+  <source src='foo.mov' type='video/quicktime'>
+  I'm sorry; your browser doesn't support HTML5 video.
+</video>
+
+<object data='move.swf' type='application/x-shockwave-flash'>
+  <param name='foo' value='bar'>
+</object>
+
+
+<!-- obscure or not that useful -->
+
+<p>
+Aquí me pongo a cantar<br>
+Al compás de la vigüela<br>
+Que al hombre que lo desvela<br>
+Una pena estrordinaria,<br>
+Como la ave solitaria<br>
+Con el cantar se consuela.
+</p>
+
+<hr>
+
+<map name='primary'>
+  <area shape='circle' coords='200,250,25' href='another.htm'>
+  <area shape='default' nohref>
+</map>
+
+<base href='http://www.example.com/'>
+
+<keygen name='pubkey' challenge='randomchars'>

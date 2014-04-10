@@ -1,0 +1,166 @@
+/* Main stylesheet for Pizzatio */
+
+
+/*
+ * Baseline
+ * ================== */
+
+html {
+  font-family: Palatino, Georgia, serif;
+  line-height: 1.4;
+}
+body {
+  margin: 0;
+  background-image: url('../img/textures/dark-wood.jpg');
+  background-color: #180e0f;
+}
+img {
+  max-width: 100%;
+}
+/* End Baseline */
+
+
+
+
+/*
+ * Subscriptions
+ * ================== */
+
+.clearfix:before,
+.clearfix:after,
+.vessel:before,
+.vessel:after {
+  content: '';
+  display: table;
+}
+.clearfix:after,
+.vessel:after {
+  clear: both;
+}
+
+.vessel {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* End Subscriptions */
+
+
+
+
+/*
+ * Persistent
+ * ================== */
+
+[role='banner'] {
+  background-color: #240f0e;
+  margin: 1.5em 0 2em;
+}
+[role='banner'] .vessel {
+  background-color: transparent;
+  background-image: none;
+  padding: 0;
+}
+[role='banner'] .brand {
+  position: absolute;
+  left: -1.5em;
+  top: -6.3em;
+}
+[role='banner'] .brand img {
+}
+[role='banner'] nav {
+  font-size: 1.75em;
+}
+[role='navigation'] {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+[role='navigation'] li {
+  float: left;
+}
+[role='navigation'] a {
+  display: block;
+  padding: 1em .75em;
+  color: #e8d8b4;
+  text-decoration: none;
+}
+[role='navigation'] a:hover {
+  background-color: #27333c;
+}
+/* End Persistent */
+
+
+
+
+/*
+ * Modular
+ * ================== */
+
+.vessel {
+  position: relative;
+  max-width: 57em;
+  padding: .1em 1.5em;
+  margin: 0 auto;
+  background-image: url('../img/textures/cream.png');
+  background-color: #fafafa;
+}
+.brand {
+  width: 300px;
+  display: inline-block;
+}
+.brand img {
+  width: 100%;
+}
+/* End Modular */
+
+
+
+
+/*
+ * Specific page: x
+ * ================== */
+
+/* End Specific page: x */
+
+
+
+
+/*
+ * Media queries
+ * ================== */
+
+/* End Media queries */
+
+
+
+
+/*
+ * Print
+ * ================== */
+
+/* End Print */
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * x
+ * ================== */
+
+/* End x */
+
+
+/*
+ * Specific page: x
+ * ================== */
+
+/* End Specific page: x */

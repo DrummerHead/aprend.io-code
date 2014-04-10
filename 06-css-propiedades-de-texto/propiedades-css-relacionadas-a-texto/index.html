@@ -1,0 +1,631 @@
+<!doctype html>
+<html>
+<head>
+<title>Propiedades CSS relacionadas a texto</title>
+<meta charset='utf-8'>
+<meta name='author' content='DrummerHead'>
+<meta name='description' content='Lista de propiedades CSS relacionadas a texto'>
+<link rel='stylesheet' href='css/stijl.css'>
+</head>
+<body>
+
+
+
+
+<h1>Propiedades CSS relacionadas a texto</h1>
+
+<header>
+<p>En naranja se muestra un ejemplo de código mas comúnmente usado y debajo ejemplos, mostrando a la izquierda CSS y a la derecha elementos afectados por este CSS.</p>
+<p>Este documento es un caso específico en el que tiene sentido usar atributos de estilo en el elemento mismo (inline styles); ya que es una demostración de CSS. En la mayoría de los casos desaconsejo utilizar atributos de estilos en el elemento, prefiriendo usar clases con sentido semántico o el elemento adecuado.</p>
+</header>
+
+<section>
+<h2>color</h2>
+
+<code>color: red;
+color: orange;
+color: antiquewhite;
+color: #f02;
+color: #117c83;
+color: rgb(210, 80, 7);
+color: rgba(127, 0, 255, 0.77);</code>
+
+<ul class='examples'>
+  <li>
+    <code>color: red;</code>
+    <div>
+      <p style='color: red;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>color: orange;</code>
+    <div>
+      <p style='color: orange;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>color: antiquewhite;</code>
+    <div>
+      <p style='color: antiquewhite;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>color: #f02;</code>
+    <div>
+      <p style='color: #f02;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+  <li>
+    <code>color: #117c83;</code>
+    <div>
+      <p style='color: #117c83;'>Queda gazpacho, fibra, látex, jamón, kiwi y viñas.</p>
+    </div>
+  </li>
+  <li>
+    <code>color: rgb(210, 80, 7);</code>
+    <div>
+      <p style='color: rgb(210, 80, 7);'>Whisky bueno: ¡excitad mi frágil pequeña vejez!</p>
+    </div>
+  </li>
+  <li>
+    <code>color: rgba(127, 0, 255, 0.77);</code>
+    <div>
+      <p style='color: rgba(127, 0, 255, 0.77);'>Es extraño mojar queso en la cerveza o probar whisky de garrafa.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Con color determinamos el color del texto. Al principio puede ser que se confundan color y background-color, simplemente recuerden que color sin nada es para el color de texto, y para color de fondo tenes que agregarle la keyword 'background'. </p>
+
+<p>Para color podemos usar keywords como red, orange etc (<a href='http://www.w3.org/TR/css3-color/#svg-color' rel='external'>hay varias</a>) pero lo normal es tener control sobre el color que queremos elegir, y para eso podemos usar valores hexadecimal. El primer par de caracteres representa rojo, el segundo verde, tercero azul. Si solo ponemos tres caracteres significa que estos se repiten (#fa0 == #ffaa00).</p>
+
+<p>Otra notación es usando rgb, en la cual ponemos directamente el valor de forma numérica, desde el 0 al 255, que es lo aguanta un unsigned char, cosa que no importa en lo mas mínimo y no tendría que estar mencionando. Si queremos que el color tenga transparencia, usando rgba introducimos un cuarto parámetro que es la opacidad, que va desde 0 hasta el 1, siendo 0 completamente translucido y 1 completamente opaco</p>
+</section>
+
+<section>
+<h2>font-family</h2>
+
+<code>font-family: Futura, 'Gill Sans', 'Century Gothic', 'Dejavu Sans', 'Trebuchet MS', sans-serif;</code>
+
+<ul class='examples'>
+  <li>
+    <code>font-family: Futura, "Gill Sans", "Century Gothic", "Dejavu Sans", "Trebuchet MS", sans-serif;</code>
+    <div>
+      <p style='font-family: Futura, "Gill Sans", "Century Gothic", "Dejavu Sans", "Trebuchet MS", sans-serif;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;</code>
+    <div>
+      <p style='font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-family: Monaco, Consolas, "Lucida Console", monospace;</code>
+    <div>
+      <p style='font-family: Monaco, Consolas, "Lucida Console", monospace;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>font-family: "Brush Script MT", cursive;</code>
+    <div>
+      <p style='font-family: "Brush Script MT", cursive;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-family: Copperplate, "Copperplate Gothic Light", fantasy;</code>
+    <div>
+      <p style='font-family: Copperplate, "Copperplate Gothic Light", fantasy;'>Queda gazpacho, fibra, látex, jamón, kiwi y viñas.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Font family dicta la fuente en la que el texto va a ser presentado con. Los valores que toma font family son los nombres de diferentes tipografía separadas por coma. Si el nombre de la tipografía tiene mas de una palabra (por ende contiene uno o mas espacios) la ponemos entre comillas. Es importante terminar el stack con la keyword <code class='inline-code'>serif</code> o <code class='inline-code'>sans-serif</code> (o la categoría genérica que sea igual al stack que estamos usando); esta keyword al final del stack le dice al cliente que use cualquier tipografía que tenga que sea de ese estilo (esto es determinado por una combinación de browser y sistema operativo). Las tipografía serif como Georgia, Times new roman, Palatino, etc tienen 'patitas', que se les llama serif. Son tipografía bastante legibles y muy usadas en libros ya que estas 'patitas' distinguen de forma mas contrastante las letras, facilitando la lectura. Las tipografía sans-serif (sans significa ausencia) como helvetica, arial (que es un plagio de helvetica), univers, verdana, etc son tipografía que no tienen "patitas". Que tipografía uno elija depende de lo apropiado que sea para el mensaje que queremos transmitir</p>
+
+<p>Es importante tener un stack (al menos una tipografía y la keyword que represente el estilo de tipografía) ya que el cliente (browser) recorre esta lista, buscando una tipografía del sistema cuyo nombre sea igual a la indicada, hasta que encuentre una que sea igual (o termine mostrando la versión genérica dictada por la keyword final). Si nos olvidamos de poner la keyword final y el usuario no tiene la tipografía instalada, en general el cliente mostrará el texto en Times New Roman, ya que no hay especificación w3c que dictamine la acción a realizar.</p>
+
+<p>Una forma de poder usar fuentes mas allá de las que estén instaladas en el sistema de nuestro usuario, es usando <a href='https://www.google.com/search?q=web+fonts&safe=off&pws=0&nfpr=1' rel='external'>web-fonts</a>.</p>
+</section>
+
+<section>
+<h2>font-size</h2>
+
+<code>font-size: 1.2em;</code>
+
+<ul class='examples'>
+  <li>
+    <code>font-size: 2em;</code>
+    <div>
+      <p style='font-size: 2em;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-size: 1.2em;</code>
+    <div>
+      <p style='font-size: 1.2em;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-size: 1.2rem;</code>
+    <div>
+      <p style='font-size: 1.2rem;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>font-size: 20px;</code>
+    <div>
+      <p style='font-size: 20px;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-size: 150%;</code>
+    <div>
+      <p style='font-size: 150%;'>Queda gazpacho, fibra, látex, jamón, kiwi y viñas.</p>
+    </div>
+  </li>
+</ul>
+
+<p>font-size cambia el tamaño en el que la tipografía es presentada. La particularidad de definir el tamaño de tipografía en ems es que la herencia es aditiva.</p>
+</section>
+
+<section>
+<h2>font-weight</h2>
+
+<code>font-weight: normal;
+font-weight: bold;
+font-weight: 100;
+font-weight: 200;
+font-weight: 300;
+font-weight: 400;
+font-weight: 500;
+font-weight: 600;
+font-weight: 700;
+font-weight: 800;
+font-weight: 900;</code>
+
+<ul class='examples' style='font-family: "Univers LT Std", Univers, "Helvetica Neue", Helvetica, sans-serif;'>
+  <li>
+    <code>font-weight: normal;</code>
+    <div>
+      <p style='font-weight: normal;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: bold;</code>
+    <div>
+      <p style='font-weight: bold;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 100;</code>
+    <div>
+      <p style='font-weight: 100;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 200;</code>
+    <div>
+      <p style='font-weight: 200;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 300;</code>
+    <div>
+      <p style='font-weight: 300;'>Queda gazpacho, fibra, látex, jamón, kiwi y viñas.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 400;</code>
+    <div>
+      <p style='font-weight: 400;'>Whisky bueno: ¡excitad mi frágil pequeña vejez!</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 500;</code>
+    <div>
+      <p style='font-weight: 500;'>Es extraño mojar queso en la cerveza o probar whisky de garrafa.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 600;</code>
+    <div>
+      <p style='font-weight: 600;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 700;</code>
+    <div>
+      <p style='font-weight: 700;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 800;</code>
+    <div>
+      <p style='font-weight: 800;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>font-weight: 900;</code>
+    <div>
+      <p style='font-weight: 900;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Font weight define el peso de la tipografía. Los valores mas usados son <code class='inline-code'>bold</code> para poner 'negritas' y <code class='inline-code'>normal</code> para contrarrestar este efecto en caso de ser heredado. También podemos definir un numero múltiplo de 100 desde el 100 hasta el 900; pero excepto que la tipografía que estemos eligiendo sea una familia (es decir que tenga numerosas variantes de peso) no nos va a servir de mucho.</p>
+</section>
+
+<section>
+<h2>font-style</h2>
+
+<code>font-style: italic;
+font-style: normal;</code>
+
+<ul class='examples'>
+  <li>
+    <code>font-style: italic;</code>
+    <div>
+      <p style='font-style: italic;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-style: normal;</code>
+    <div>
+      <p style='font-style: normal;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-style: oblique;</code>
+    <div>
+      <p style='font-style: oblique;'>Nunca uses oblique ya que el cliente en vez de usar la versión tipográfica itálica, inclina la versión normal. Parece lo mismo pero es peor tipograficamente.</p>
+    </div>
+  </li>
+</ul>
+
+<p>font-style es para poner italicas o removerla,</p>
+</section>
+
+<section>
+<h2>font-variant</h2>
+
+<code>font-variant: normal;
+font-variant: small-caps;</code>
+
+<ul class='examples'>
+  <li>
+    <code>font-variant: normal;</code>
+    <div>
+      <p style='font-variant: normal;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>font-variant: small-caps;</code>
+    <div>
+      <p style='font-variant: small-caps;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Y font-variant es para versalitajj raramente utilizada.</p>
+</section>
+
+<section>
+<h2>text-align</h2>
+
+<code>text-align: left;
+text-align: right;
+text-align: center;
+text-align: justify;</code>
+
+<ul class='examples'>
+  <li>
+    <code>text-align: left;</code>
+    <div>
+      <p style='text-align: left;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-align: right;</code>
+    <div>
+      <p style='text-align: right;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-align: center;</code>
+    <div>
+      <p style='text-align: center;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>text-align: justify;</code>
+    <div>
+      <p style='text-align: justify;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait. Queda gazpacho, fibra, látex, jamón, kiwi y viñas. Whisky bueno: ¡excitad mi frágil pequeña vejez!</p>
+    </div>
+  </li>
+  <li>
+    <code>text-align: start;</code>
+    <div>
+      <p style='text-align: start;'>"start" es desde el comienzo, relativo al sentido del lenguaje utilizado, ya que existen lenguajes (Como Árabe) que se escriben de izquierda a derecha.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-align: end;</code>
+    <div>
+      <p style='text-align: end;'>"end" es desde el final, relativo al sentido del lenguaje utilizado, ya que existen lenguajes (Como Árabe) que se escriben de izquierda a derecha. Tanto end como start son raramente utilizados, pero existen.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Text align nos permite alinear el texto para donde nos guste,  izquierda, derecha centrado o justificado.</p>
+</section>
+
+<section>
+<h2>text-decoration</h2>
+
+<code>text-decoration: none;
+text-decoration: underline;
+text-decoration: overline;
+text-decoration: line-through;</code>
+
+<ul class='examples'>
+  <li>
+    <code>text-decoration: none;</code>
+    <div>
+      <p style='text-decoration: none;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-decoration: underline;</code>
+    <div>
+      <p style='text-decoration: underline;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-decoration: overline;</code>
+    <div>
+      <p style='text-decoration: overline;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>text-decoration: line-through;</code>
+    <div>
+      <p style='text-decoration: line-through;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+</ul>
+
+<p>text-decoration es generalmente usado para manipular el estilo de links (con underline) y También se usa para estilar elementos ins y del</p>
+</section>
+
+<section>
+<h2>text-indent</h2>
+
+<code>text-indent: 1em;</code>
+
+<ul class='examples'>
+  <li>
+    <code>text-indent: 1em;</code>
+    <div>
+      <p style='text-indent: 1em;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-indent: 2em;</code>
+    <div>
+      <p style='text-indent: 2em;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-indent: 10px;</code>
+    <div>
+      <p style='text-indent: 10px;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>text-indent: -1em;</code>
+    <div>
+      <p style='text-indent: -1em;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-indent: -7777em;</code>
+    <div>
+      <p style='text-indent: -7777em;'>Queda gazpacho, fibra, látex, jamón, kiwi y viñas.</p>
+    </div>
+  </li>
+</ul>
+
+<p>indentación de texto, que es que tanto la primera linea de un párrafo/cuerpo de texto se separa de la alineación normal del texto</p>
+</section>
+
+<section>
+<h2>text-transform</h2>
+
+<code>text-transform: capitalize;
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: none;</code>
+
+<ul class='examples'>
+  <li>
+    <code>text-transform: capitalize;</code>
+    <div>
+      <p style='text-transform: capitalize;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-transform: uppercase;</code>
+    <div>
+      <p style='text-transform: uppercase;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-transform: lowercase;</code>
+    <div>
+      <p style='text-transform: lowercase;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>text-transform: none;</code>
+    <div>
+      <p style='text-transform: none;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+</ul>
+
+<p>generalmente usado si queremos que un elemento se muestre siempre en mayúsculas.</p>
+</section>
+
+<section>
+<h2>text-overflow</h2>
+
+<code>text-overflow: clip;
+text-overflow: ellipsis;
+text-overflow: '…';</code>
+
+<ul class='examples' id='text-overflow-example'>
+  <li>
+    <code>text-overflow: clip;</code>
+    <div>
+      <p style='text-overflow: clip;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja. Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-overflow: ellipsis;</code>
+    <div>
+      <p style='text-overflow: ellipsis;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro. Queda gazpacho, fibra, látex, jamón, kiwi y viñas.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-overflow: '…';</code>
+    <div>
+      <p style='text-overflow: "…";'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe! Whisky bueno: ¡excitad mi frágil pequeña vejez! Es extraño mojar queso en la cerveza o probar whisky de garrafa.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Controla la forma en que el texto reacciona cuando sobrepasa la capacidad de su contenedor, en circunstancias en las que el contenedor de texto no puede agrandarse libremente para contener el texto. En este caso emulamos esa circunstancia con <code class='inline-code'>overflow: hidden; white-space: nowrap;</code></p>
+</section>
+
+<section>
+<h2>text-shadow</h2>
+
+<code>text-shadow: {{offset-x}} {{offset-y}} {{blur-radius}} {{color}};
+text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.25);</code>
+
+<ul class='examples'>
+  <li>
+    <code>text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.25);</code>
+    <div>
+      <p style='text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.25);'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-shadow: -0.05em -0.05em 0 rgba(255, 0, 0, 0.5)</code>
+    <div>
+      <p style='text-shadow: -0.05em -0.05em 0 rgba(255, 0, 0, 0.5)'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>text-shadow: 0 -0.1em 0 rgba(180, 180, 180, 0.9);
+color: #fafafa;</code>
+    <div>
+      <p style='text-shadow: 0 -0.1em 0 rgba(180, 180, 180, 0.9); color: #fafafa;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>text-shadow: 0 0 2px #0f0, 0 0 2px #0f0;
+background-color: #000;
+color: #0f0;</code>
+    <div>
+      <p style='text-shadow: 0 0 2px #0f0, 0 0 2px #0f0; background-color: #000; color: #0f0;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Para agregar sombra al texto. Sombra es una forma de llamarle, pero podemos emular diferentes efectos, como grabado, glow, etc. Básicamente crea una copia del texto por detrás a la cual podemos controlar su offset, blur y color.</p>
+</section>
+
+<section>
+<h2>line-height</h2>
+
+<code>line-height: 1.4;</code>
+
+<ul class='examples'>
+  <li>
+    <code>line-height: 1;</code>
+    <div>
+      <p style='line-height: 1;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja. El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>line-height: 1.2;</code>
+    <div>
+      <p style='line-height: 1.2;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro. El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>line-height: 1.4;</code>
+    <div>
+      <p style='line-height: 1.4;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe! Whisky bueno: ¡excitad mi frágil pequeña vejez! Es extraño mojar queso en la cerveza o probar whisky de garrafa.</p>
+    </div>
+  </li>
+  <li>
+    <code>line-height: 1.6;</code>
+    <div>
+      <p style='line-height: 1.6;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait. Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Modifica el alto de linea, es decir la separación entre linea y linea en un párrafo de texto continuo. Este es un valor importantísimo ya que afecta la legibilidad del texto de forma critica. Una particularidad de line-height es que puede ser escrito sin unidad, si elegimos no poner unidad el alto de linea es relativo al tamaño te texto computado independientemente de la unidad de tamaño que hallamos elegido. Para cuerpo de texto recomiendo entre 1.3 y 1.5; para títulos grandes entre 1 y 1.2.</p>
+</section>
+
+<section>
+<h2>letter-spacing</h2>
+
+<code>letter-spacing: normal;
+letter-spacing: 0.3em;
+letter-spacing: 3px;
+letter-spacing: -2px;</code>
+
+<ul class='examples'>
+  <li>
+    <code>letter-spacing: normal;</code>
+    <div>
+      <p style='letter-spacing: normal;'>El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+    </div>
+  </li>
+  <li>
+    <code>letter-spacing: 0.3em;</code>
+    <div>
+      <p style='letter-spacing: 0.3em;'>El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro.</p>
+    </div>
+  </li>
+  <li>
+    <code>letter-spacing: 3px;</code>
+    <div>
+      <p style='letter-spacing: 3px;'>Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!</p>
+    </div>
+  </li>
+  <li>
+    <code>letter-spacing: -2px;</code>
+    <div>
+      <p style='letter-spacing: -2px;'>Ese libro explica en su epígrafe las hazañas y aventuras de Don Quijote de la Mancha en Kuwait.</p>
+    </div>
+  </li>
+</ul>
+
+<p>Para cambiar el espacio entre letras, esto modifica el kerning. Útil para títulos grandes, para disminuir un poco el espacio entre letras.</p>
+</section>
+
+
+<footer>
+<p>Recomiendo no limitarse a leer este documento, además jueguen con estas propiedades usando <a href='https://getfirebug.com/commandline' rel='external'>Firebug</a> o el editor de consola preferido del browser que estén usando (<a href='https://developer.mozilla.org/en/docs/Tools/Web_Console' rel='external'>Firefox</a>, <a href='https://developers.google.com/chrome-developer-tools/docs/console' rel='external'>Chrome</a>, <a href='http://www.opera.com/dragonfly/documentation/console/' rel='external'>Opera</a>, <a href='https://developer.apple.com/library/safari/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Console/Console.html' rel='external'>Safari</a>). Internet es su caja de arena.</p>
+</footer>
+
+
+
+
+</body>
+</html>

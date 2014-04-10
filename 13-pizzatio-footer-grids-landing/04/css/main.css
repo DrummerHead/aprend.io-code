@@ -1,0 +1,329 @@
+/* Main stylesheet for Pizzatio */
+
+
+/*
+ * Baseline
+ * ================== */
+
+html {
+  font-family: Palatino, Georgia, serif;
+  line-height: 1.4;
+}
+body {
+  margin: 0;
+  background-image: url('../img/textures/dark-wood.jpg');
+  background-color: #180e0f;
+}
+img {
+  max-width: 100%;
+}
+/* End Baseline */
+
+
+
+
+/*
+ * Subscriptions
+ * ================== */
+
+.clearfix:before,
+.clearfix:after,
+.vessel:before,
+.vessel:after,
+[role='contentinfo'] dl:before,
+[role='contentinfo'] dl:after,
+.row:before,
+.row:after {
+  content: '';
+  display: table;
+}
+.clearfix:after,
+.vessel:after,
+[role='contentinfo'] dl:after,
+.row:after {
+  clear: both;
+}
+
+.vessel,
+.row {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* End Subscriptions */
+
+
+
+
+/*
+ * Persistent
+ * ================== */
+
+[role='banner'] {
+  background-color: #240f0e;
+  margin: 1.5em 0 2em;
+}
+[role='banner'] .vessel,
+[role='contentinfo'] .vessel {
+  background-color: transparent;
+  background-image: none;
+}
+[role='banner'] .vessel {
+  padding: 0;
+}
+[role='banner'] .brand {
+  position: absolute;
+  left: -1.5em;
+  top: -6.3em;
+}
+[role='banner'] .brand img {
+}
+[role='banner'] nav {
+  font-size: 1.75em;
+}
+[role='navigation'] {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+[role='navigation'] li {
+  float: left;
+}
+[role='navigation'] a {
+  display: block;
+  padding: 1em .75em;
+  color: #e8d8b4;
+  text-decoration: none;
+}
+[role='navigation'] a:hover {
+  background-color: #27333c;
+}
+
+main .vessel {
+  min-height: 7em;
+}
+
+[role='contentinfo'] {
+  background-color: #871103;
+  color: #e8d8b4;
+  font-size: 1.2em;
+}
+[role='contentinfo'] dl {
+  margin: 1.25em 0;
+}
+[role='contentinfo'] dt {
+  float: left;
+  clear: left;
+  min-width: 9em;
+  padding: 0 1em 0 0;
+}
+[role='contentinfo'] dd {
+  float: left;
+  margin: 0;
+}
+.copyright {
+  position: absolute;
+  right: 1.5em;
+  bottom: 1.35em;
+}
+
+/* End Persistent */
+
+
+
+
+/*
+ * Modular
+ * ================== */
+
+.vessel {
+  position: relative;
+  max-width: 57rem;
+  padding: .1em 1.5em;
+  margin: 0 auto;
+  background-image: url('../img/textures/cream.png');
+  background-color: #fafafa;
+}
+.brand {
+  width: 300px;
+  display: inline-block;
+}
+.brand img {
+  width: 100%;
+}
+
+.row {
+  margin: 0 -0.5em;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  float: left;
+  padding: 0 0.5em;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.col-1 {
+  width: 16.666666666666668%;
+}
+.col-2 {
+  width: 33.333333333333336%;
+}
+.col-3 {
+  width: 50%;
+}
+.col-4 {
+  width: 66.66666666666667%;
+}
+.col-5 {
+  width: 83.33333333333333%;
+}
+.col-6 {
+  width: 100%;
+}
+
+.discount {
+}
+.discount ins {
+  font-weight: bold;
+  text-decoration: none;
+}
+.discount del {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+#cta {
+  padding: 0.75em 0;
+  font-size: 2em;
+  text-align: center;
+}
+#cta p {
+}
+
+/* End Modular */
+
+
+
+
+/*
+ * Specific page: Landing
+ * ================== */
+
+#elevator {
+  font-size: 1.75em;
+}
+.jorge-avatar {
+  margin: 1em 0 0 0;
+}
+#elevator h1 {
+  font-size: 2.25em;
+  line-height: 1;
+  margin: .7em 0 .3em 0;
+}
+#elevator p {
+  margin: .2em 0 0 0;
+}
+
+#offer {
+  position: relative;
+  margin: 2em 0 0 0;
+}
+#offer .row {
+  background-color: #e8d8b4;
+  margin-left: 0;
+}
+#offer .row .col-3:first-child {
+  padding-left: 0;
+}
+#offer h2 {
+  position: absolute;
+  top: 1.8em;
+  right: -1.3em;
+  padding: .3em .6em;
+  margin: 0;
+  font-size: 1.75em;
+  background-color: #871103;
+  color: #e8d8b4;
+  -webkit-transform: rotate(20deg);
+     -moz-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-transform-origin: 100% 50% 0;
+     -moz-transform-origin: 100% 50% 0;
+          transform-origin: 100% 50% 0;
+}
+#offer h2 a {
+  color: #e8d8b4;
+  text-decoration: none;
+}
+#offer h2 a:hover {
+  text-decoration: underline;
+}
+#offer img {
+  display: block;
+}
+.offer-details {
+  font-size: 1.4em;
+  line-height: 1.25;
+}
+.offer-details strong {
+  display: block;
+  margin: 1em 0 0.3em;
+  font-size: 1.6em;
+}
+.offer-details p {
+  margin: 0;
+}
+.offer-details .discount {
+  float: right;
+  margin: .3em .4em 0 0;
+  font-size: 1.6em;
+}
+
+/* End Specific page: Landing */
+
+
+
+
+/*
+ * Media queries
+ * ================== */
+
+/* End Media queries */
+
+
+
+
+/*
+ * Print
+ * ================== */
+
+/* End Print */
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * x
+ * ================== */
+
+/* End x */
+
+
+/*
+ * Specific page: x
+ * ================== */
+
+/* End Specific page: x */

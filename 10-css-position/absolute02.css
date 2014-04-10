@@ -1,0 +1,16 @@
+#alpha {
+  top: 1em;
+  left: 1em;
+}
+#beta {
+  top: 1em;
+  right: 1em;
+}
+#charlie {
+  bottom: 1em;
+  left: 1em;
+}
+#delta {
+  bottom: 1em;
+  right: 1em;
+}

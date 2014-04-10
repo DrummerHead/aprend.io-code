@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+header,
+main,
+aside,
+footer {
+  padding: 1.5%;
+}
+header {
+}
+#content:before,
+#content:after {
+  content: '';
+  display: table;
+}
+#content:after {
+  clear: both;
+}
+main {
+  float: left;
+  width: 70%;
+}
+aside {
+  float: left;
+  width: 30%;
+}
+footer {
+}

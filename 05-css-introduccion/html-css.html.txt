@@ -1,0 +1,55 @@
+
+Selector de elemento
+####################
+
+<p>Grupo de palabras en un texto escrito que expresa una idea o un argumento.</p>
+
+<style>
+p {
+  margin: 1em 0;
+}
+</style>
+
+
+
+
+Selector de clase
+#################
+
+<div class='warning desperation'>
+  <p>Este producto es el mejor del mundo</p>
+</div>
+
+<style>
+.warning {
+  font-size: 1.4em;
+  line-height: 1.2;
+  background-color: #f00;
+}
+.desperation {
+  font-size: 14em;
+}
+</style>
+
+
+
+
+Selector de id
+##############
+
+<section id='our-team'>
+  <ul>
+    <li>Alvaro Alvarez</li>
+    <li>Barbara Barajas</li>
+    <li>Colin Cortez</li>
+    <li>Diego Diaz</li>
+    <li>Escoba Escobar</li>
+  </ul>
+</section>
+
+<style>
+#our-team ul {
+  list-style-type: none;
+  margin: 0;
+}
+</style>

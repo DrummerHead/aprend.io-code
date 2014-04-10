@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<title>Pizzatio! &#183; Contacto</title>
+<meta charset='utf-8'>
+<meta name='description' content='Pizzatio es el lugar donde vos realmente queres comer pizza!!'>
+<meta name='author' content='DrummerHead'>
+<meta name='' content=''>
+<link rel='stylesheet' href='css/main.css'>
+</head>
+<body id='contact'>
+
+
+<header role='banner'>
+<div class='vessel'>
+  <a href='index.html' class='brand'>
+    <img src='img/pizzatio-logo.png' alt='Pizzatio Logo'>
+  </a>
+  <nav>
+    <ol role='navigation'>
+      <li>
+        <a href='acerca.html'>Acerca</a>
+      </li>
+      <li>
+        <a href='menu.html'>Menú</a>
+      </li>
+      <li>
+        <a href='fotos.html'>Fotos</a>
+      </li>
+      <li>
+        <a href='contacto.html'>Contacto</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+</header>
+
+<main role='main'>
+<div class='vessel'>
+  <section id='contact-info'>
+    <h1>Visitanos o llama y pedí!</h1>
+    <dl class='contact-data'>
+      <dt>Dirección:</dt>
+      <dd>Gornalio 2340 entre Mazocca y Flanders</dd>
+      <dt>Horario:</dt>
+      <dd>Lunes a Sabado de 10:00 a 23:00</dd>
+      <dt>Telefono / Delivery:</dt>
+      <dd>02252353933</dd>
+      <dt>Mail:</dt>
+      <dd>jorge@pizzatio.com</dd>
+    </dl>
+  </section>
+  <section id='map'>
+    <div id='gmap_canvas'>
+    </div>
+  </section>
+  <section id='get-in-touch'>
+    <form>
+      <div class='row'>
+        <div class='col-3'>
+          <label for='userName'>Nombre</label>
+          <input type='text' id='userName' placeholder='John Doe' required>
+        </div>
+        <div class='col-3'>
+          <label for='userMail'>E-mail</label>
+          <input type='email' id='userMail' placeholder='john@doe.com' required>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-6'>
+          <label for='userComment'>Mensaje</label>
+          <textarea id='userComment' required></textarea>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-6'>
+          <label>Recomendarias Pizzatio a tus amigos?</label>
+          <label>
+            <input type='radio' name='recommend' value='por-supuesto'> Por supuesto!
+          </label>
+          <label>
+            <input type='radio' name='recommend' value='mas-vale'> Mas vale!
+          </label>
+          <label>
+            <input type='radio' name='recommend' value='indudablemente'> Indudablemente!
+          </label>
+          <label>
+            <input type='radio' name='recommend' value='dreamscape'> A veces me levanto por las noches pensando en Pizzatio
+          </label>
+        </div>
+      </div>
+      <div class='row send-space'>
+        <div class='col-6'>
+          <button type='submit' class='button'>Enviar</button>
+        </div>
+      </div>
+    </form>
+  </section>
+</div>
+</main>
+
+<footer role='contentinfo'>
+  <div class='vessel'>
+    <dl class='contact-data'>
+      <dt>Dirección:</dt>
+      <dd>Gornalio 2340 entre Mazocca y Flanders</dd>
+      <dt>Horario:</dt>
+      <dd>Lunes a Sabado de 10:00 a 23:00</dd>
+      <dt>Telefono / Delivery:</dt>
+      <dd>02252353933</dd>
+      <dt>Mail:</dt>
+      <dd>jorge@pizzatio.com</dd>
+    </dl>
+    <span class='copyright'>2013 &#169; Pizzatio.com</span>
+  </div>
+</footer>
+
+<div id='scripts'>
+  <script src="http://maps.google.com/maps/api/js?v=3&sensor=false"></script>
+  <script>
+    function init_map(){
+
+      var myOptions = {
+        zoom : 16,
+        center : new google.maps.LatLng(-34.8836111,-56.18194440000002),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+
+      var map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+      var marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-34.8836111, -56.18194440000002)});
+      var infowindow = new google.maps.InfoWindow({content:"<span style='height:auto !important; display:block; white-space:nowrap; overflow:hidden !important;'><strong style='font-weight:400;'>Pizzatio!</strong><br>     Gornalio 2340 entre Mazocca y Flanders<br> Montevideo</span>" });
+      google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
+      infowindow.open(map,marker);
+    }
+    google.maps.event.addDomListener(window, "load", init_map);
+  </script>
+</div>
+
+
+</body>
+</html>

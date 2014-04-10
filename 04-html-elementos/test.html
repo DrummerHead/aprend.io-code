@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+<head>
+<title>Testing elements default look</title>
+<meta charset='utf-8'>
+<style>
+body {
+  font-family: sans-serif;
+  max-width: 72em;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  line-height: 1.4;
+}
+section {
+  border-bottom: .1em solid #ddd;
+  padding: 1em 0;
+  margin: .5em 0 0;
+}
+body > h2 {
+  background-color: #eee;
+  padding: .5em .6em;
+  margin: 0 0 .25em;
+}
+
+/* Form related */
+form ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+form li {
+  display: block;
+  padding: .75em 0;
+}
+label {
+  display: block;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<h1>Showing default rendering of common HTML elements</h1>
+
+
+<h2>Grouping content, collections</h2>
+
+<section>
+<h3>&#60;ul&#62;</h3>
+
+<ul>
+  <li>Alpha</li>
+  <li>Bravo</li>
+  <li>Charlie</li>
+</ul>
+
+</section>
+
+
+<section>
+<h3>&#60;ol&#62;</h3>
+
+<ol>
+  <li>Alpha</li>
+  <li>Bravo</li>
+  <li>Charlie</li>
+</ol>
+
+</section>
+
+
+<section>
+<h3>&#60;dl&#62;</h3>
+
+<dl>
+  <dt>Thing</dt>
+  <dd>Definition</dd>
+  <dt>Stuff</dt>
+  <dd>Description</dd>
+</dl>
+
+</section>
+
+
+<h2>Text-level semantics</h2>
+
+<section>
+<h3>&#60;hn&#62;</h3>
+
+<h1>Title of the document</h1>
+<h2>Area title</h2>
+<h3>Subtitle</h3>
+<h4>Subber title</h4>
+<h5>Even Subber title</h5>
+<h6>The Subbest of titles</h6>
+
+</section>
+
+
+<section>
+<h3>inline text semantics</h3>
+
+<p>Pack my box with five dozen <strong>liquor jugs</strong>. Few quips <em>galvanized</em> the mock jury box. Quick brown fox jumps over the <abbr title='HyperText Markup Language'>HTML</abbr>. Jumpy halfling dwarves pick quartz box. Vex quest wizard, judge my backflop hand. The jay, pig, fox, zebra and my wolves quack! Blowzy red vixens fight for a quick jump. Sex prof gives back no quiz with mild joy. The quick brown fox jumps over a lazy dog.</p>
+<p>A quick brown fox jumps over the lazy dog. Quest judge wizard bonks foxy chimp love. Boxers had zap of gay jock love, quit women. Joaquin Phoenix was gazed by MTV for luck. JCVD might pique a sleazy boxer with funk.[2] Quizzical twins proved my hijack-bug fix. The quick brown fox jumps over the lazy dog. Waxy and quivering, jocks fumble the pizza. When zombies arrive, quickly fax judge Pat. Heavy boxes perform quick waltzes and jigs.</p>
+
+</section>
+
+
+<h2>Embedded content</h2>
+
+<section>
+<h3>&#60;img&#62;</h3>
+
+<img src='http://www.w3.org/html/logo/downloads/HTML5_Logo_512.png' alt='HTML5 logo'>
+
+</section>
+
+
+<section>
+<h3>&#60;iframe&#62;</h3>
+
+<iframe src='https://duckduckgo.com/'></iframe>
+
+</section>
+
+
+<section>
+<h3>&#60;video&#62;</h3>
+
+<video controls>
+  <source src='http://html5demos.com/assets/dizzy.mp4' type='video/mp4'>
+  <source src='http://html5demos.com/assets/dizzy.webm' type='video/webm'>
+  <source src='http://html5demos.com/assets/dizzy.ogv' type='video/ogg'>
+</video>
+
+</section>
+
+
+<section>
+<h3>&#60;audio&#62;</h3>
+
+<audio src='http://mcdlr.com/bouncing-rainbow/audio/8bp123-01-jellica-dennye.mp3' preload='auto' autobuffer controls></audio>
+
+</section>
+
+
+<section>
+<h3>&#60;canvas&#62;</h3>
+
+<canvas id='canvas' width='150' height='150'></canvas>
+
+<script>
+var canvas = document.getElementById('canvas');
+if (canvas.getContext) {
+  var ctx = canvas.getContext('2d');
+
+  ctx.fillStyle = 'rgb(200,0,0)';
+  ctx.fillRect (0, 0, 100, 100);
+
+  ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+  ctx.fillRect (50, 50, 150, 150);
+}
+</script>
+
+</section>
+
+
+<h2>Tabular data</h2>
+
+<section>
+<h3>tabular</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Chrome</th>
+      <th>Internet Explorer</th>
+      <th>Firefox</th>
+      <th>Safari</th>
+      <th>Opera</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>StatCounter</th>
+      <td>46.60%</td>
+      <td>24.64%</td>
+      <td>20.37%</td>
+      <td>5.06%</td>
+      <td>1.33%</td>
+      <td>2.00%</td>
+    </tr>
+    <tr>
+      <th>W3Counter</th>
+      <td>34.1%</td>
+      <td>20.3%</td>
+      <td>18.3%</td>
+      <td>17.8%</td>
+      <td>2.7%</td>
+      <td>6.8%</td>
+    </tr>
+    <tr>
+      <th>Wikimedia</th>
+      <td>42.69%</td>
+      <td>18.02%</td>
+      <td>15.28%</td>
+      <td>6.06%</td>
+      <td>2.36%</td>
+      <td>15.59%</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+
+<h2>Forms &#38; Interactive</h2>
+
+<section>
+<h3>&#60;a&#62;</h3>
+
+<a href='http://mcdlr.com/'>mcdlr.com</a>
+
+</section>
+
+<section>
+<h3>Forms</h3>
+
+
+
+
+<form>
+  <ul>
+    <li>
+      <label for='user_name'>Name</label>
+      <input type='text' id='user_name' placeholder='John Doe'>
+    </li>
+    <li>
+      <label for='user_email'>Email</label>
+      <input type='email' id='user_email' placeholder='your@mail.com'>
+    </li>
+    <li>
+      <label for='user_password'>Name</label>
+      <input type='password' id='user_password'>
+    </li>
+    <li>
+      <strong>Choose item</strong>
+      <label>
+        <input type='checkbox' value='agua'>
+        agua
+      </label>
+      <label>
+        <input type='checkbox' value='pan'>
+        pan
+      </label>
+      <label>
+        <input type='checkbox' value='ph'>
+        ph
+      </label>
+      <label>
+        <input type='checkbox' value='jabon'>
+        jabon
+      </label>
+    </li>
+    <li>
+      <strong>Select fruta</strong>
+      <label>
+        <input type='radio' value='banana' name='fruta'>
+        banana magia is
+      </label>
+      <label>
+        <input type='radio' value='manzana' name='fruta'>
+        manzana
+      </label>
+      <label>
+        <input type='radio' value='pera' name='fruta'>
+        pera
+      </label>
+      <label>
+        <input type='radio' value='durazno' name='fruta'>
+        durazno
+      </label>
+    </li>
+    <li>
+      <label for='user_country'>Country</label>
+      <select id='user_country'>
+        <option value='ar'>Argentina</option>
+        <option value='bo'>Bolivia</option>
+        <option value='br'>Brazil</option>
+        <option value='cl'>Chile</option>
+        <option value='co'>Colombia</option>
+        <option value='ec'>Ecuador</option>
+        <option value='py'>Paraguay</option>
+        <option value='pe'>Peru</option>
+        <option value='uy'>Uruguay</option>
+        <option value='ve'>Venezuela</option>
+      </select>
+    </li>
+    <li>
+      <label for='user_comments'>
+      <textarea id='user_comments'></textarea>
+    </li>
+  </ul>
+  <div class='form-actions'>
+    <input type='button' value='buscar'>
+    <input type='submit' value='enviar'>
+    <button>refactorear</button>
+  </div>
+</form>
+
+</section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* Mi primer CSS =^.^= < sugooooii */
+
+html {
+  background-color: lightblue;
+}
+body {
+  width: 50em;
+  padding: 0.5em 3em;
+  margin: 3em auto;
+  line-height: 1.4;
+  font-family: sans-serif;
+  color: #444;
+  background-color: #fff;
+  box-shadow: 0 0 1em rgba(0, 0, 0, .3);
+}
+p {
+}

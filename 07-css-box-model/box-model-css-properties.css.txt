@@ -1,0 +1,159 @@
+
+
+Width related
+#############
+
+
+width: auto;
+width: 55em;
+width: 80%;
+width: 777px;
+
+min-width: 0;
+min-width: 55em;
+min-width: 80%;
+min-width: 777px;
+
+max-width: none;
+max-width: 55em;
+max-width: 80%;
+max-width: 777px;
+
+
+
+
+
+
+
+
+Height related
+##############
+
+height: auto;
+height: 55em;
+height: 80%;
+height: 777px;
+
+min-height: 0;
+min-height: 55em;
+min-height: 80%;
+min-height: 777px;
+
+max-height: none;
+max-height: 55em;
+max-height: 80%;
+max-height: 777px;
+
+
+
+
+
+
+
+
+Padding related
+###############
+
+
+padding-top: 0;
+padding-top: 1em;
+padding-top: 10%
+
+padding-right: 0;
+padding-right: 1em;
+padding-right: 10%
+
+padding-bottom: 0;
+padding-bottom: 1em;
+padding-bottom: 10%
+
+padding-left: 0;
+padding-left: 1em;
+padding-left: 10%
+
+padding: 1em;
+padding: 1em 2em;
+padding: 1em 2em 1.5em;
+padding: 1em 3em 0 3.5em;
+
+
+
+
+
+
+
+
+Border related
+##############
+
+
+border-width: 1em;
+border-width: 1em 2em;
+border-width: 1em 2em 1.5em;
+border-width: 1em 3em 0 3.5em;
+
+border-style: solid;
+border-style: solid none;
+border-style: solid none double;
+border-style: solid solid none none;
+
+none
+hidden
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+outset
+
+border-color: #444;
+border-color: #444 #fafafa;
+border-color: #444 #fafafa #ccc;
+border-color: #444 #bbb #ccc #ddd;
+
+border: 1px solid #444;
+
+border-top: 1px solid #444;
+border-right: 1px solid #444;
+border-bottom: 1px solid #444;
+border-left: 1px solid #444;
+
+
+
+
+
+
+
+
+Margin related
+##############
+
+
+margin-top: 0;
+margin-top: 1em;
+margin-top: 10%
+
+margin-right: 0;
+margin-right: auto;
+margin-right: 1em;
+margin-right: 10%
+
+margin-bottom: 0;
+margin-bottom: 1em;
+margin-bottom: 10%
+
+margin-left: 0;
+margin-left: auto;
+margin-left: 1em;
+margin-left: 10%
+
+margin: 1em;
+margin: 1em auto;
+margin: 1em auto 1.5em;
+margin: 1em 3em 0 3.5em;
+
+
+
+

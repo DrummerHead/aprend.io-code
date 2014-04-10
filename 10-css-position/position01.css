@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.4;
+  font-family: sans-serif;
+  background-color: #69f;
+}
+main {
+  max-width: 47em;
+  padding: 1em 2em;
+  margin: 0 auto;
+  background-color: #fff;
+}
+article {
+}
+p {
+  margin: 1.5em 0;
+}
+#unruly {
+  position: relative;
+}
+

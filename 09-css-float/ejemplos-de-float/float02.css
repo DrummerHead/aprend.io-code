@@ -1,0 +1,18 @@
+header,
+main,
+aside,
+footer {
+  padding: 2em;
+}
+header {
+}
+aside {
+  float: left;
+  width: 20em;
+}
+main {
+  margin: 0 0 0 24em;
+}
+footer {
+  clear: both;
+}

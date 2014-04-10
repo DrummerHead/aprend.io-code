@@ -1,0 +1,110 @@
+html {
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: #444;
+}
+h1 {
+}
+p {
+}
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1em;
+  line-height: 1.4;
+  text-align: center;
+  border-radius: 0.25em;
+  background-color: #090;
+  color: #fff;
+  text-shadow: 0 -0.1em 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.button:active {
+  top: -1px;
+}
+
+
+
+
+nav ol:before,
+nav ol:after {
+  content: '';
+  display: table;
+}
+nav ol:after {
+  clear: both;
+}
+.button {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3.4em;
+  background-color: #cfc;
+}
+#brand {
+  float: left;
+  padding: .3em 1em;
+  font-size: 1.6em;
+}
+#brand strong {
+}
+#brand small {
+  font-size: .6em;
+}
+nav {
+  float: right;
+  margin: 0 1em 0 0;
+}
+nav ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav li {
+  float: left;
+}
+nav a {
+  display: inline-block;
+  padding: 1em;
+}
+#controls {
+  position: fixed;
+  top: 3.4em;
+  right: 0;
+  bottom: 0;
+  width: 7em;
+  background-color: #ffc;
+}
+#controls ul {
+  list-style-type: none;
+  padding: 1em;
+  margin: 0;
+}
+#controls li {
+  margin: .5em 0;
+}
+#controls .button {
+  width: 100%;
+}
+main {
+  padding: .5em 1.7em;
+  margin: 3.4em 7em 0 0;
+}
+

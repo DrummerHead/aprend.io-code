@@ -1,0 +1,55 @@
+/* Mi primer CSS =^.^= < sugooooii */
+
+html {
+  background-color: lightblue;
+}
+body {
+  width: 50em;
+  padding: 0.5em 3em;
+  margin: 3em auto;
+  line-height: 1.4;
+  font-family: sans-serif;
+  color: #444;
+  background-color: #fff;
+  box-shadow: 0 0 1em rgba(0, 0, 0, .3);
+}
+h1 {
+  font-size: 3em;
+}
+.table-of-contents {
+  background-color: #d2f4ff;
+  border: 1px solid #c3e0f4;
+  padding: 1.2em 2.6em;
+  font-size: 1.2em;
+}
+.table-of-contents a {
+  color: #00640F;
+}
+.table-of-contents ul {
+  font-size: .8em;
+}
+.intro {
+  font-size: 1.2em;
+  border-style: solid none;
+  border-width: 1px;
+  border-color: pink;
+  padding: 1em;
+  margin: 1em 0;
+}
+figure {
+  float: right;
+  width: 11.4em;
+  padding: .8em 1.2em;
+  margin: 0 0 .5em 1em;
+  font-size: 1.4em;
+  background-color: #F8F8F8;
+  color: #555;
+  font-style: italic;
+}
+dt {
+  font-weight: bold;
+  margin: 1em 0 0 0;
+}
+dd {
+  margin: 0;
+}

@@ -1,0 +1,25 @@
+main {
+  position: relative;
+  max-width: 20em;
+  margin: 0 auto;
+}
+#alpha {
+  top: 1em;
+  left: 1em;
+  z-index: 10;
+}
+#beta {
+  top: 2em;
+  left: 7em;
+  z-index: 20;
+}
+#charlie {
+  top: 5em;
+  left: 2em;
+  z-index: 30;
+}
+#delta {
+  top: 6em;
+  left: 8em;
+  z-index: 40;
+}

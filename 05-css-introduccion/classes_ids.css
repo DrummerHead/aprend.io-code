@@ -1,0 +1,67 @@
+/* Mi segundo CSS =^.^= */
+
+html {
+  background-color: lightblue;
+}
+body {
+  width: 52em;
+  padding: 0.5em 3em;
+  margin: 3em auto;
+  line-height: 1.4;
+  font-family: sans-serif;
+  color: #444;
+  background-color: #fff;
+  box-shadow: 0 0 1em rgba(0, 0, 0, .3);
+}
+
+h1 {
+  font-size: 3em;
+  margin: .75em 0;
+  color: #555;
+}
+
+.table-of-contents {
+  margin: 1em 0;
+  border: 1px solid #d4dee5;
+  padding: 1em;
+  font-size: 1.2em;
+  background-color: #eaf4fb;
+  list-style-position: inside;
+}
+.table-of-contents li {
+  margin: .4em 0;
+}
+.table-of-contents ul {
+  font-size: .9em;
+}
+.table-of-contents a {
+  color: #404052;
+}
+.intro {
+  font-size: 1.2em;
+  border-style: solid none;
+  border-width: 1px;
+  border-color: pink;
+  padding: 1em;
+  margin: 1.5em 0;
+}
+figure {
+  float: right;
+  width: 11.25em;
+  padding: .8em;
+  margin: 0 0 1em 1.3em;
+  font-size: 1.5em;
+  font-style: italic;
+  background-color: #f8f8f8;
+  color: #666;
+}
+dt {
+  font-weight: bold;
+  margin: 1em 0 0 0;
+}
+dt:after {
+  content: ':'
+}
+dd {
+  margin: 0;
+}

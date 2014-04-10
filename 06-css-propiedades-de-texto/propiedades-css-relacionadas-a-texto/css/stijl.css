@@ -1,0 +1,86 @@
+html {
+  font-family: sans-serif;
+  background-color: #eee;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  max-width: 60em;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1em 4em;
+  line-height: 1.4;
+  font-size: 1.2em;
+}
+h1 {
+}
+p {
+}
+section {
+  border-top: 1px solid #eee;
+  padding: 1em 0;
+}
+section:last-of-type {
+  border-bottom: 1px solid #eee;
+}
+h2 {
+}
+code {
+  display: block;
+  white-space: pre-wrap;
+  font-family: monospace;
+  background-color: #ffeca1;
+  padding: .7em 1em;
+}
+code.inline-code {
+  display: inline;
+  padding: .3em .5em;
+  background-color: #ffffd5;
+}
+
+
+.examples li,
+.examples code,
+.examples div {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.examples {
+  margin: 2.5em 0 1em 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
+}
+.examples li {
+  float: left;
+  width: 100%;
+  margin: 0 0 1.5em 0;
+  border-style: solid solid none solid;
+  border-color: #f8f8f8;
+  border-width: 1px;
+}
+.examples code {
+  float: left;
+  width: 50%;
+  background-color: #ffffd5;
+}
+.examples div {
+  float: left;
+  width: 50%;
+  padding: .7em 1em;
+  font-size: .8333em;
+}
+.examples div > * {
+  margin: 0;
+}
+footer {
+  font-size: 1.6em;
+  margin: 2em 0;
+}
+#text-overflow-example div > * {
+  overflow: hidden;
+  white-space: nowrap;
+}

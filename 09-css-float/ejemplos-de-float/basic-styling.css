@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  line-height: 1.4;
+  font-family: sans-serif;
+  color: #444;
+}
+header {
+  background-color: #ffc;
+}
+main {
+  background-color: #cfc;
+}
+aside {
+  background-color: #cff;
+}
+footer {
+  background-color: #ccf;
+}

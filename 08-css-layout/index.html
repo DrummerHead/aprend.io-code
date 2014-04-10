@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<title>CSS Layout examplified</title>
+<meta charset='utf-8'>
+<meta name='author' content='DrummerHead'>
+<link rel='stylesheet' href='css/stijl.css'>
+</head>
+<body>
+<div id='viewport-emulation'>
+  <div id='body-emulation' data-style="'margin-bottom: ' + (window.innerHeight - (600 + 70)) + 'px'">
+    <div class='main-emulation' id='block-example'>
+      <div class='wire h6'>
+        <p>Header</p>
+      </div>
+      <div class='wire h20'>
+        <p>Main content</p>
+      </div>
+      <div class='wire h6'>
+        <p>Footer</p>
+      </div>
+    </div><!-- /.main-emulation -->
+    <div class='main-emulation' id='float-example'>
+      <div class='wire h6'>
+        <p>Header</p>
+      </div>
+      <div class='row'>
+        <div class='wire h20 w9 float-left'>
+          <p>Main content</p>
+        </div>
+        <div class='wire h20 w3 float-left'>
+          <p>Sidebar</p>
+        </div>
+      </div>
+      <div class='wire h6'>
+        <p>Footer</p>
+      </div>
+    </div><!-- /.main-emulation -->
+    <div class='main-emulation' id='float-example-2'>
+      <div class='row'>
+        <div class='wire w4 h8 float-left'>
+          <p>Panel</p>
+        </div>
+        <div class='wire w4 h8 float-left'>
+          <p>Panel</p>
+        </div>
+        <div class='wire w4 h8 float-left'>
+          <p>Panel</p>
+        </div>
+      </div>
+      <div class='wire h24'>
+        <p>Map</p>
+      </div>
+      <div class='row h5'>
+        <div class='wire w4 h8 float-left'>
+          <p>Info</p>
+        </div>
+        <div class='wire w4 h8 float-left'>
+          <p>Info</p>
+        </div>
+        <div class='wire w4 h8 float-left'>
+          <p>Info</p>
+        </div>
+      </div>
+    </div><!-- /.main-emulation -->
+    <div class='main-emulation wire h42' id='absolute-example'>
+      <div class='wire w3 h12' id='ae1'>
+        <p>Link</p>
+      </div>
+      <div class='wire w3 h12' id='ae2'>
+        <p>Link</p>
+      </div>
+      <div class='wire w3 h12' id='ae3'>
+        <p>Link</p>
+      </div>
+    </div><!-- /.main-emulation -->
+    <div class='main-emulation' id='fixed-example'>
+      <div class='w8'>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+        <div class='wire h10'>
+          <p>content</p>
+        </div>
+      </div>
+      <div id='fixed-panel' class='wire h42' data-style="'right: ' + ((window.innerWidth - 800) / 2 + 30 ) + 'px'">
+        <p>Panel</p>
+      </div>
+    </div><!-- /.main-emulation -->
+    <div class='main-emulation' id='complex-example-twitter'>
+      <div id='fixed-header' class='wire tight' data-style="'right: ' + ((document.body.clientWidth - 800) / 2 ) + 'px; left: ' + ((document.body.clientWidth - 800) / 2) + 'px;'">
+        <ol class='menu row'>
+          <li>Home</li>
+          <li>Connect</li>
+          <li>Discover</li>
+          <li>Me</li>
+          <li>Search</li>
+        </ol>
+      </div>
+      <div class='row tw-content'>
+        <div class='w3 float-left'>
+          <div class='wire tight'>
+            <div class='row'>
+              <div class='w3 wire avatar float-left'>
+              </div>
+              <div class='w9 comment wire float-left'>
+                <p>John Doe</p>
+              </div>
+            </div>
+            <ol class='menu row wire'>
+              <li class='w4'>3,518</li>
+              <li class='w4'>134</li>
+              <li class='w4'>282</li>
+            </ol>
+            <div class='wire cuddly'>
+              <input type='text' class='w12' placeholder='Compose new Tweet...'>
+            </div>
+          </div>
+        </div>
+        <div class='w9 float-left'>
+          <div class='wire '>
+            <p>Tweets</p>
+          </div>
+          <ul class='content-flow'>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+            <li class='row'>
+              <div class='w1 wire avatar float-left'>
+              </div>
+              <div class='w11 comment wire float-left'>
+                <p>Just poets wax boldly as kings and queens march over fuzz. Bored? Craving a pub quiz fix? Why, just come to the Royal Oak! Grumpy wizards.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /.main-emulation -->
+  </div><!-- /#body-emulation -->
+</div><!-- /#viewport-emulation -->
+<div id='mask'>
+</div>
+<ol id='controls'>
+  <li id='previous'>&#10096;</li>
+  <li id='next'>&#10097;</li>
+</ol>
+<div id='gedrag'>
+  <script src='js/gedrag.js'></script>
+</div>
+</body>
+</html>
