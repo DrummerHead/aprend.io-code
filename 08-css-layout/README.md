@@ -2,7 +2,7 @@ Este es el código de ejemplo relacionado a:
 
 http://aprend.io/css/layout
 
-## Pleas note
+## Please note
 
 Analyze this code keeping in mind that the objective here is to create a set of reusable wireframe-like modules with the purpose of exemplifying the different layout possibilities in CSS.
 
